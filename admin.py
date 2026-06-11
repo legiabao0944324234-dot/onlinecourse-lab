@@ -1,5 +1,7 @@
 from django.contrib import admin
-from .models import Course, Lesson, Question, Choice, Submission, Enrollment, User
+from django.contrib.auth.models import User
+from django.contrib.auth.models import Group
+from .models import Course, Lesson, Question, Choice, Submission, Enrollment
 
 
 class ChoiceInline(admin.TabularInline):
